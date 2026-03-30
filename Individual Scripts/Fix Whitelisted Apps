@@ -1,0 +1,17 @@
+Function FixWhitelistedApps {
+
+    #Credit to abulgatz for these lines of code
+    $WhitelistedAppsToFix = @(
+        "Microsoft.WindowsCalculator"
+        "Microsoft.WindowsStore"
+        "Microsoft.Windows.Photos"
+        "Microsoft.ScreenSketch"
+        "Microsoft.WindowsCamera"
+    )
+    ForEach ($App in $WhitelistedAppsToFix) {
+        If (!(Get-AppxPackage -AllUsers -Name $App)) {
+            Get-AppxPackage -AllUsers $App | ForEach { Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml" }
+        }
+    }
+}
+FixWhitelistedApps

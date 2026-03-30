@@ -1,0 +1,15 @@
+# Requires -RunAsAdministrator
+Write-Output "Unpinning all tiles from the Start Menu"
+
+# Modern approach: Clearing the CloudStore registry key efficiently wipes the Start Menu tile layout
+$CloudStore = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\CloudStore'
+If (Test-Path $CloudStore) {
+    Write-Output "Stopping Explorer to clear CloudStore cache"
+    Stop-Process -Name explorer -Force
+    Start-Sleep -Seconds 2
+    Remove-Item $CloudStore -Recurse -Force
+    Start-Process explorer.exe
+    Write-Output "Start menu tiles have been successfully unpinned"
+} else {
+    Write-Output "CloudStore registry key not found, start menu may already be unpinned"
+}

